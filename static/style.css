@@ -1,3 +1,7 @@
+h2{
+    color: red;
+}
+
 /* Section: Applies to both Mobile and Desktop */
 @media only screen and (min-width: 0px){
 
@@ -1222,12 +1226,17 @@
 /* Section: Desktop Styling - Applies to Small Desktop Window*/
 @media only screen and (768px <= width <= 1100px) {
     #sidebar {
-        width: 22rem;
+        width: 16rem;
     }
     #detail{
-        width: calc(100% - 22rem); /* Adjust width to account for sidebar */
-        margin-left: 22rem; /* Add left margin equal to sidebar width */
+        width: calc(100% - 16rem); /* Adjust width to account for sidebar */
+        margin-left: 16rem; /* Add left margin equal to sidebar width */
     }
+    .moveOver{
+        width: calc(100% - 16rem);
+        margin-left: 16rem;
+    }
+
     .photo2{
         display: none;
     }
@@ -1242,14 +1251,19 @@
 /* Section: Desktop Styling - Applies to Medium Desktop Window */
 @media only screen and (1101px <= width <= 1300px) {
     #sidebar {
-        width: 23rem;
+        width: 18rem;
     }
     #detail{
-        width: calc(100% - 23rem); /* Adjust width to account for sidebar */
-        margin-left: 23rem; /* Add left margin equal to sidebar width */
+        width: calc(100% - 18rem); /* Adjust width to account for sidebar */
+        margin-left: 18rem; /* Add left margin equal to sidebar width */
         margin-right: 0;
         margin-top: 0;
         margin-bottom: 0;
+    }
+    .moveOver{
+
+        width: calc(100% - 18rem);
+        margin-left: 18rem;
     }
     .photo2{
         display: none;
@@ -1265,14 +1279,19 @@
 /* Section: Desktop Styling - Applies to Large Desktop Window */
 @media only screen and (1301px <= width) {
     #sidebar {
-        width: 26rem;
+        width: 20rem;
     }
     #detail{
-        width: calc(100% - 26rem); /* Adjust width to account for sidebar */
-        margin-left: 26rem; /* Add left margin equal to sidebar width */
+        width: calc(100% - 20rem); /* Adjust width to account for sidebar */
+        margin-left: 20rem; /* Add left margin equal to sidebar width */
         margin-right: 0;
         margin-top: 0;
         margin-bottom: 0;
+    }
+    .moveOver{
+
+        width: calc(100% - 20rem);
+        margin-left: 20rem;
     }
     :root {
         --divisor: 2.7;

@@ -1,0 +1,51 @@
+
+    <div class="divC mt-0 mb-5 p-2 pb-1 bg-indigo-200 rounded-lg border-solid border-1 border-gray-300 shadow-lg shadow-gray-600/65">
+        <ul class="text-md text-left m-3 ml-5 font-light list-disc">
+            <div class="accordion">
+                <h2 id="accordion-flush-heading-1">
+                <button
+                    type="button"
+                    class="flex items-center justify-between w-full mb-2 text-left text-gray-500 dark:text-gray-400 gap-3 focus:outline-0 focus:outline-indigo-200 shadow-none focus:shadow-none"
+                    data-accordion-target="#accordion-flush-body-1"
+                    aria-expanded="{{ isOpen }}"
+                    aria-controls="accordion-flush-body-1"
+                    onClick="isOpen = true"
+                >
+                    <div>
+                        <h5 class="my-3 font-bold accordion-title">Some Helpful Info:</h5>
+                        <li class="accordion-bullet">
+                            <p class="text-gray-500 dark:text-gray-400 text-pretty text-wrap accordion-text text-lg">
+                                {{ pageText[0] }}
+                            </p>
+                        </li>
+                        <p class="accordion-bullet text-center mt-3 {% if isOpen %}hidden{% endif %}">Read More</p>
+                    </div>
+                </button>
+                </h2>
+
+
+                    <button
+                        type="button"
+                        class="flex items-center justify-between w-full mb-2 text-left text-gray-500 dark:text-gray-400 gap-3 focus:outline-0 focus:outline-indigo-200 shadow-none focus:shadow-none"
+                        data-accordion-target="#accordion-flush-body-1"
+                        aria-expanded={isOpen}
+                        aria-controls="accordion-flush-body-1"
+                        onClick="isOpen = false"
+                    >
+                        <div>
+                            {% for item in pageText if not loop.first  %}
+                                <li class="w-full accordion-bullet">
+                                    <p class="mb-1 text-gray-500 dark:text-gray-400 text-pretty text-wrap accordion-text">
+                                        {{ item }}
+                                    </p>
+                                </li>
+                            {% endfor %}
+
+
+                            <p class="accordion-bullet text-center mt-3">Show Less</p>
+                        </div>
+                    </button>
+
+            </div>
+        </ul>
+    </div>

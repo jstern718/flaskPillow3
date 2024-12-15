@@ -1,0 +1,35 @@
+    <div id="sidebar">
+        <a href="/">
+            <h1>PILLOWSMITH</h1>
+        </a>
+        <div>
+            <nav>
+                {% set nav = (
+                    {"name":"Main Page","link": "/"},
+                    {"name":"Most Popular","link": "/mostpopular"},
+                    {"name":"Cooling Pillows","link": "/cooling"},
+                    {"name":"Thin Pillows","link": "/thin"},
+                    {"name":"Memory Foam","link": "/memoryfoam"},
+                    {"name":"Shredded Foam","link": "/shreddedfoam"},
+                    {"name":"Pillowcases","link": "/pillowcases"}
+                    ) %}
+                {% if nav %}    <ul>
+                        {% for item in nav %}
+                        <li class="text-center">
+                            <a href="{{ item.link }}">
+                                {{ item.name }}
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    <p>
+                        <i>No pages</i>
+                    </p>
+                {% endif %}
+            </nav>
+        </div>
+        <div class="flex flex-col">
+            <img src="{{ pillowsmithLogo }}" class="m-3" alt="Pillowsmith's logo: Two white pillows on a blue background that has feathers on it. The word Pillowsmith is printed over the pillows in blue." />
+        </div>
+    </div>
