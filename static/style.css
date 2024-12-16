@@ -1,6 +1,4 @@
-h2{
-    color: red;
-}
+
 
 /* Section: Applies to both Mobile and Desktop */
 @media only screen and (min-width: 0px){
@@ -46,22 +44,54 @@ h2{
         box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.2), 0 1px 2px hsla(0, 0%, 0%, 0.2);
     }
 
+    /** accordion styling */
+
     .accordion-title{
         color: #699bd1;
         font-weight: 800;
     }
 
     .accordion-bullet{
-        color: #699bd1;
-        font-weight: 600;
+        color: gray;
+        font-weight: 400;
+        text-align: start;
+        list-style-type: none;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: -5px;
+        margin-bottom: -5px;
+    }
+
+    .accordion-list{
+        background-color:rgb(199, 210, 254);
+        border-radius: 10px;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        width: 100%;
     }
 
     .accordion-text{
         font-weight: 400;
+        align-self: left;
+
     }
+
+    /* .accordion-top{
+        align-self: left;
+        background-color: rgb(199, 210, 254);
+        margin-bottom: 10px;
+    }
+
+    .accordion-bottom{
+        align-self: left;
+        background-color: #699bd1;
+    } */
 
     .page-title{
         text-shadow: 1px 1px 1px gray;
+        text-align: center;
     }
 
     .question-text{
@@ -466,6 +496,7 @@ h2{
             margin-left: 1rem;
             margin-right: 1rem;
             padding: .2rem;
+
         }
 
         #sidebar nav a {
@@ -674,6 +705,11 @@ h2{
     /* .home-box{
 
     } */
+
+    article{
+        margin-right: .5rem;
+        margin-left: .5rem;
+    }
 
     .home-box-bottom{
         box-shadow: 5px 5px 5px #5c5c5c;
@@ -1009,6 +1045,11 @@ h2{
         text-decoration: none;
         gap: 1rem;
         font-size: medium;
+
+    }
+
+    .page-link{
+        text-align: center;
     }
 
     #sidebar nav a:hover {
@@ -1204,15 +1245,62 @@ h2{
         left: 0px;
     }
 
+    /** Pillow Card Styling */
+
+    .pillow-list{
+        margin-left: -1rem;
+        padding: 0;
+        list-style: none;
+    }
+
+    .pillow-item{
+        border: 1px solid black;
+        border-radius: 10px;
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+
     .pillow-list-item{
         display: flex;
         flex-direction: row;
     }
 
+    .pillow-intro{
+       font-size: large;
+    }
+
+    .pillow-title{
+        font-size: medium;
+    }
+
+    .pillow-text{
+        color: black;
+    }
+
     .pillow-num{
-        padding-right: 15px;
-        padding-left: 15px;
+        padding-right: 1.5rem;
+        padding-left: .5rem;
+        margin-right: 1.5rem;
         align-content: center;
+        border-right: gray 1px solid;
+    }
+
+    .pillow-non-num{
+        margin: .5rem;
+    }
+
+    .pillow-button-div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .pillow-button{
+        background-color: rgb(37 99 235);
+        color:white;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
     }
 
     .mobile-nav-list{
@@ -1228,23 +1316,28 @@ h2{
     #sidebar {
         width: 16rem;
     }
-    #detail{
-        width: calc(100% - 16rem); /* Adjust width to account for sidebar */
-        margin-left: 16rem; /* Add left margin equal to sidebar width */
-    }
     .moveOver{
-        width: calc(100% - 16rem);
-        margin-left: 16rem;
-    }
+        width: calc(100% - 17rem);
+        margin-left: 17rem;
 
+    }
     .photo2{
         display: none;
     }
     :root {
         --divisor: 1.5;
     }
-    .item-title{
+    .pillow-intro{
         font-size: large;
+        text-align: center;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        font-weight: 600
+    }
+    .pillow-title{
+        font-size: medium;
+        font-weight: 400;
+        color: black;
     }
 }
 
@@ -1253,17 +1346,11 @@ h2{
     #sidebar {
         width: 18rem;
     }
-    #detail{
-        width: calc(100% - 18rem); /* Adjust width to account for sidebar */
-        margin-left: 18rem; /* Add left margin equal to sidebar width */
-        margin-right: 0;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
+
     .moveOver{
 
-        width: calc(100% - 18rem);
-        margin-left: 18rem;
+        width: calc(100% - 19rem);
+        margin-left: 19rem;
     }
     .photo2{
         display: none;
@@ -1271,33 +1358,46 @@ h2{
     :root {
         --divisor: 1.5;
     }
-    .item-title{
+    .pillow-intro{
         font-size: large;
+        text-align: center;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        font-weight: 600
+    }
+    .pillow-title{
+        font-size: medium;
+        font-weight: 400;
+        color: black;
     }
 }
 
 /* Section: Desktop Styling - Applies to Large Desktop Window */
 @media only screen and (1301px <= width) {
     #sidebar {
-        width: 20rem;
+        width: 21rem;
     }
-    #detail{
-        width: calc(100% - 20rem); /* Adjust width to account for sidebar */
-        margin-left: 20rem; /* Add left margin equal to sidebar width */
-        margin-right: 0;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
+
     .moveOver{
 
-        width: calc(100% - 20rem);
-        margin-left: 20rem;
+        width: calc(100% - 22rem);
+        margin-left: 22rem;
+
     }
     :root {
         --divisor: 2.7;
     }
-    .item-title{
+    .pillow-intro{
         font-size: x-large;
+        text-align: center;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        font-weight: 600
+    }
+    .pillow-title{
+        font-size: large;
+        font-weight: 400;
+        color: black;
     }
 }
 

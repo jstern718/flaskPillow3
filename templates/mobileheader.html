@@ -12,7 +12,7 @@
             <img src="{{ catImageMobile }}" alt="Pillowsmith banner with multiple illustrated pillows and a real orang cat on a purlpe pillow. The text reads 'Pillowsith: Sleep like a kitten'" class="cat-image"/>
         </div>
     </div>
-    <div class="{% if isNavOpen %}showMenuNav wide-open{% else %}hideMenuNav wide-open{% endif %}">
+    <div class="{% if is_nav_open %}showMenuNav wide-open{% else %}hideMenuNav wide-open{% endif %}">
         <div class="menu-div">
             <button type="button" class="x-div absolute top-8 right-8"
                 onclick="setIsNavOpen(false)">
@@ -22,7 +22,7 @@
                     fill="none"
                     stroke="currentColor"
                     stroke-width="2"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                     stroke-linejoin="round"
                 >
                     <line x1="18" y1="6" x2="6" y2="18" />
@@ -30,27 +30,21 @@
                 </svg>
             </button>
             <nav>
-                {% if pages %}
-                    <ul class="mobile-nav-list">
-                        {% for page in pages %}
-                        <li key="{{ page.id }}" class="mobile-nav">
-                            <NavLink class="{{ 'active' if isActive else 'pending' if isPending else '' }}"
-                            onclick="setIsNavOpen(false)"
-                            href="{{ page.link }}">
-                                {% if page.name %}
-                                    {{ page.name }}
-                                {% else %}
-                                    <i>No Name</i>
-                                {% endif %}
-                            </NavLink>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                {% else %}
-                    <p>
-                        <i>No pages</i>
-                    </p>
-                {% endif %}
+                <ul class="mobile-nav-list">
+                    {% for page in pages %}
+                    <li class="mobile-nav">
+                        <a class="{{ 'active' if page.isActive else 'pending' if page.isPending else '' }}"
+                        onclick="setIsNavOpen(false)"
+                        href="{{ page.link }}">
+                            {% if page.name %}
+                                {{ page.name }}
+                            {% else %}
+                                <i>No Name</i>
+                            {% endif %}
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
             </nav>
         </div>
     </div>

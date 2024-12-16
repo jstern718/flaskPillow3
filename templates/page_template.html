@@ -1,19 +1,20 @@
 {% extends 'base.html' %}
 
 {% block page %}
-    <div class="divA justify-end">
+    <div class="divA justify-end moveOver">
         <article>
             <Hero />
-            <div class="w-full">
-                <h2 class="text-2xl font-bold mb-4 mt-4 p-3 page-title text-center">{pageTitle}</h2>
+            <div>
+                <h2 class="text-2xl font-bold mb-4 mt-4 p-3 page-title text-center">{{pageTitle}}</h2>
                 {% include 'accordion.html' %}
                 {% if chartImage %}
                     <img src="{{ chartImage }}" alt="Chart showing you what pillows are best for you to buy" />
                 {% endif %}
             </div>
-            <ul class="space-y-4">
+            <ul class="pillow-list">
                 {% for pillow in pillowList %}
-                        <li class="w-full moveOver">
+                        <li class="pillow-item">
+                                {% set pillowNum = loop.index %}
                                 {% include 'pillow.html' %}
                         </li>
                 {% endfor %}

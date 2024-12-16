@@ -18,7 +18,6 @@ print ("thinText", thinText)
 # def sidebar():
 #     return render_template('sidebar.html', isNavOpen=False, pillowList=thin)
 
-
 @app.route("/thin")
 def thin():
     return render_template('page_template.html',

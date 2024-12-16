@@ -15,17 +15,13 @@
                     ) %}
                 {% if nav %}    <ul>
                         {% for item in nav %}
-                        <li class="text-center">
+                        <li>
                             <a href="{{ item.link }}">
-                                {{ item.name }}
+                                <p class="page-link">{{ item.name }}</p>
                             </a>
                         </li>
                         {% endfor %}
                     </ul>
-                {% else %}
-                    <p>
-                        <i>No pages</i>
-                    </p>
                 {% endif %}
             </nav>
         </div>
