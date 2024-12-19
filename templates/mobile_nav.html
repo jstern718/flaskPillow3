@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block page %}
+
+<div>
+    {% set affiliate_wording = "* As an Amazon Affiliate - and/or member of other affiliate programs - when you buy through our links, we may earn a commission." %}
+    <p class="affiliate-mobile">{{ affiliate_wording }}</p>
+    <div class="mobile-header-nav">
+        <div class="hamburger-holder">
+                <a type='button' href="/mobilenav" class="hamburger-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#5f6368"><path d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z"/></svg>
+                </a>
+        </div>
+        <div class="image-div">
+            <img src="static/assets/PillowsmithMobile.png" alt="Pillowsmith banner with multiple illustrated pillows and a real orang cat on a purlpe pillow. The text reads 'Pillowsith: Sleep like a kitten'" class="cat-image"/>
+        </div>
+    </div>
+    <div class="mobile-nav">
+        <nav>
+            {% set nav = (
+                {"name":"Main Page","link": "/"},
+                {"name":"Most Popular","link": "/mostpopular"},
+                {"name":"Cooling Pillows","link": "/cooling"},
+                {"name":"Thin Pillows","link": "/thin"},
+                {"name":"Memory Foam","link": "/memoryfoam"},
+                {"name":"Shredded Foam","link": "/shreddedfoam"},
+                {"name":"Pillowcases","link": "/pillowcases"}
+                ) %}
+            {% if nav %}
+                <ul class="mobile-nav-list">
+                    {% for item in nav %}
+                        {% set endpoint = "/" + request.endpoint %}
+                            {% if endpoint == item.link %}
+                                <li class="active mobile-nav-link">
+                                    <a href="{{ item.link }}">
+                                        <p class="mobile-page-link">{{ item.name }}</p>
+                                    </a>
+                                </li>
+                        {% else %}
+                            <li class="mobile-nav-link">
+                                <a href="{{ item.link }}">
+                                    <p class="mobile-page-link">{{ item.name }}</p>
+                                </a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </nav>
+    </div>
+</div>
+{% endblock page %}

@@ -1,31 +1,44 @@
     <div id="sidebar">
-        <a href="/">
-            <h1>PILLOWSMITH</h1>
-        </a>
+        <div class="sidebar-title-div">
+            <a href="/">
+                <h1>PILLOWSMITH</h1>
+            </a>
+        </div>
         <div>
             <nav>
                 {% set nav = (
-                    {"name":"Main Page","link": "/"},
-                    {"name":"Most Popular","link": "/mostpopular"},
-                    {"name":"Cooling Pillows","link": "/cooling"},
-                    {"name":"Thin Pillows","link": "/thin"},
-                    {"name":"Memory Foam","link": "/memoryfoam"},
-                    {"name":"Shredded Foam","link": "/shreddedfoam"},
-                    {"name":"Pillowcases","link": "/pillowcases"}
+                    {"name":"Main Page","link": "/", "alt_link": "/main"},
+                    {"name":"Most Popular","link": "/most-popular", "alt_link":"/most_popular"},
+                    {"name":"Cooling Pillows","link": "/cooling", "alt_link": "/cooling"},
+                    {"name":"Thin Pillows","link": "/thin", "alt_link":"/thin"},
+                    {"name":"Memory Foam","link": "/memory-foam", "alt_link": "/memory_foam"},
+                    {"name":"Shredded Foam","link": "/shredded-foam", "alt_link": "/shredded_foam"},
+                    {"name":"Pillowcases","link": "/pillowcases", "alt_link": "/pillowcases"}
                     ) %}
-                {% if nav %}    <ul>
+                {% if nav %}
+                    <ul>
                         {% for item in nav %}
-                        <li>
-                            <a href="{{ item.link }}">
-                                <p class="page-link">{{ item.name }}</p>
-                            </a>
-                        </li>
+                            {% set endpoint = "/" + request.endpoint %}
+                                {% if endpoint == item.alt_link %}
+                                    <li>
+                                        <a href="{{ item.link }}" class="active">
+                                            <p class="page-link"> {{ item.name }}</p>
+                                        </a>
+                                    </li>
+                            {% else %}
+                                <li>
+                                    <a href="{{ item.link }}">
+                                        <p class="page-link">{{ item.name }}</p>
+                                    </a>
+
+                                </li>
+                            {% endif %}
                         {% endfor %}
                     </ul>
                 {% endif %}
             </nav>
         </div>
-        <div class="flex flex-col">
-            <img src="{{ pillowsmithLogo }}" class="m-3" alt="Pillowsmith's logo: Two white pillows on a blue background that has feathers on it. The word Pillowsmith is printed over the pillows in blue." />
+        <div class="logo-div">
+            <img src="static/assets/pillowsmith_logo.png" alt="Pillowsmith's logo: Two white pillows on a blue background that has feathers on it. The word Pillowsmith is printed over the pillows in blue." />
         </div>
     </div>

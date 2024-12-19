@@ -1,10 +1,8 @@
-thinPillow = "path/to/thinPillowImage.jpg"  # Define thinPillow variable
-
 thinList = [
     {"intro": "The Best Low Profile Pillow Out There",
-     "title": "DOWNLITE Flat & Soft Down Pillow",
-     "description": "Downlite is the n'est plus ultra of thin pillow brands. The Flat & Soft Down Pillow is made with 75% white duck down. It is about 2 inches thick, but the high down content means that 2 inches can turn into 8 inches if you fluff it up. It is a little on the expensive side, but it is worth it.",
-     "link": "https://amzn.to/4elSMj5"},
+      "title": "DOWNLITE Flat & Soft Down Pillow",
+      "description": "Downlite is the n'est plus ultra of thin pillow brands. The Flat & Soft Down Pillow is made with 75% white duck down. It is about 2 inches thick, but the high down content means that 2 inches can turn into 8 inches if you fluff it up. It is a little on the expensive side, but it is worth it.",
+      "link": "https://amzn.to/4elSMj5"},
     {"intro": "The Best Low Profile Pillow For Fans of Memory Foam",
       "title": "BLISSBURY Stomach Sleeping Pillow - Thin Memory Foam",
       "description": "There is a lot of competition in this part of the market. If you know the exact hight you want to the tenth of an inch, you can probably find it. But if you're not sure yet, Blissbury is starting to make a name for itself as a good option. This pillow is 3.3 inches thick, but you can also get an even thinner version that it only is 2.6 inches.",
@@ -19,6 +17,7 @@ thinList = [
       "link": "https://amzn.to/48G3iAi"},
     {"intro": "The Best Firm Low Profile Pillow (that is also great for people who sleep hot)",
       "title": "SUQ I OME Adjustable Slim Sleeper Latex Pillow",
-      "description": "Latex is a really great material for people who can't get enough support from foam or down alternative pillows. It is more springy, but still molds to your head. This pillow is adjustable, and you can choose to make it 1, 2.5 or 3.5 inches"}
+      "description": "Latex is a really great material for people who can't get enough support from foam or down alternative pillows. It is more springy, but still molds to your head. This pillow is adjustable, and you can choose to make it 1, 2.5 or 3.5 inches",
+      "link": "https://amzn.to/3Z1QFvl"}
 ]
 
