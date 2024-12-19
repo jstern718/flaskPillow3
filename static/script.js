@@ -17,3 +17,4 @@ function clickFunctionClose() {
     closedAccordion.classList.remove("closed");
     closedAccordion.classList.add("open");
 }
+

@@ -162,8 +162,7 @@ button blue:hover: #2563eb
 }
 
 /* Section: Mobile Styling */
-@media only screen and (max-width: 700px) {
-
+@media only screen and (max-aspect-ratio: 1/1) {
     .photo2{
         display: none;
     }
@@ -881,7 +880,7 @@ button blue:hover: #2563eb
 }
 
 /* Section: Desktop Styling - Applies to all desktop sizes */
-@media only screen and (min-width: 701px) {
+@media only screen and (min-width: 677px) {
 
     :root {
     font-family: "Poppins", Arial, Helvetica, sans-serif;;
@@ -1616,7 +1615,7 @@ button blue:hover: #2563eb
 /* Section: Desktop Subsections */
 
 /* Sub-Section: Desktop Styling - Applies to Small Desktop Window*/
-@media only screen and (min-width: 701px) and (max-width: 925px) {
+@media only screen and (min-width:677px) and (max-width: 925px) {
     #sidebar {
         width: 15rem;
     }
