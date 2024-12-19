@@ -1,0 +1,4 @@
+[x] TODO: only some pages turn blue in sidebar when you are on them
+TODO: ??? make page you were on turn blue in mobile nav
+[x] TODO: work on main pages
+TODO: Research SEO and add meta tags

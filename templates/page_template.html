@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block page %}
+    <div class="divA justify-end moveOver">
+        <div class="desktop-header">
+            {% set affiliate_wording = "* As an Amazon Affiliate - and/or member of other affiliate programs - when you buy through our links, we may earn a commission." %}
+            <p class="affiliate-desktop">{{ affiliate_wording }}</p>
+            <div className="hero-div">
+                <img src="static/assets/hero6.jpg" alt="Pillowsmith banner with a purple background. In front of the background is an illustrated woman sleeping on a pillow and a real cat sleeping on a different people (all in black & white). The text reads 'Pillowsith: Sleep like a kitten'" class="hero-img"/>
+            </div>
+        </div>
+        <div class="mobile-header">
+            {% set affiliate_wording = "* As an Amazon Affiliate - and/or member of other affiliate programs - when you buy through our links, we may earn a commission." %}
+            <p class="affiliate-mobile">{{ affiliate_wording }}</p>
+            <div class="mobile-line">
+                <div class="hamburger-horizontal">
+                    <div class="hamburger-holder">
+                            <a type='button' href="/mobilenav" class="hamburger-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#5f6368"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/></svg>
+                            </a>
+                    </div>
+                </div>
+                <div class="image-div">
+                    <img src="static/assets/PillowsmithMobile.png" alt="Pillowsmith banner with multiple illustrated pillows and a real orang cat on a purlpe pillow. The text reads 'Pillowsith: Sleep like a kitten'" class="cat-image"/>
+                </div>
+            </div>
+        </div>
+        <article>
+            <div>
+                <h2 class="page-title">{{pageTitle}}</h2>
+                <div class="divC ">
+                    <ul class="accordion-list">
+                        <h3 class="accordion-title">Some Helpful Info:</h3>
+                        {% include 'accordion.html' %}
+                    </ul>
+                </div>
+                {% if chartImage %}
+                    <img src="{{ chartImage }}" width="100%" alt="Chart showing you what pillows are best for you to buy" />
+                {% endif %}
+            </div>
+            <ul class="pillow-list">
+                {% for pillow in pillowList %}
+                        <li class="pillow-item">
+                                {% set pillowNum = loop.index %}
+                                {% include 'pillow.html' %}
+                        </li>
+                {% endfor %}
+            </ul>
+        </article>
+    </div>
+{% endblock page %}

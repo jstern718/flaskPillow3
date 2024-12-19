@@ -1,0 +1,33 @@
+
+<li id="closed-accordion" class="accordion-bullet open" >
+    <p>
+        {{ pageText[0] }}
+    </p>
+    <div class="read-more-div">
+        <button
+            type="none"
+            class="read-more-button"
+            onClick="clickFunctionOpen()">
+            Read More
+        </button>
+    </div >
+</li>
+<div id="open-accordion" class="closed">
+    {% for item in pageText %}
+    <li class="accordion-bullet">
+        <p>
+            {{ item }}
+        </p>
+    </li>
+    {% endfor %}
+    <div class="read-less-div">
+        <button
+            type="none"
+            class="read-less-button"
+            onClick="clickFunctionClose()">
+            Show Less
+        </button>
+    </div >
+</div>
+
+
