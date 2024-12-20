@@ -13,12 +13,6 @@ accordion background: #c7d2fe
         border: whitesmoke 6px solid;
     }
 
-    .mobile-nav{
-
-
-
-    }
-
     .mobile-nav-list-holder{
         background-color: white;
         color: black;
@@ -42,8 +36,10 @@ accordion background: #c7d2fe
         border-top: 1px solid #e3e3e3;
         color:#002366;
         text-shadow: gray 1px 1px 1px;
+    }
 
-
+    .logo-dark{
+        display: none;
     }
 
     .pillow-item{
@@ -100,10 +96,6 @@ accordion background: #c7d2fe
                       rgba(29, 29, 29, 0.5));
     }
 
-    .page-link{
-            color: lightgray;
-    }
-
     #sidebar nav a:hover {
         background: #013153;
     }
@@ -115,6 +107,15 @@ accordion background: #c7d2fe
         text-anchor:start;
         text-rendering:optimizeLegibility;
         text-orientation: mixed;
+    }
+
+    .page-link{
+        color: lightgray;
+}
+
+
+    .logo-light{
+        display: none;
     }
 
     .pillow-item{
