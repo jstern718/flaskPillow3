@@ -26,7 +26,8 @@ def main():
 
     return render_template('main.html',
                             mainList = mainList,
-                            pageTitle="Main Page")
+                            pageTitle="Pillowsmith - The Best Pillows",
+                            pageDescription="The best pillows for every type of sleeper.")
 
 
 @app.route("/most-popular")
@@ -35,7 +36,8 @@ def most_popular():
     return render_template('page_template.html',
                             pillowList = mostPopularList,
                             pageText = mostPopularText,
-                            pageTitle="The Best Most Popular Pillows")
+                            pageTitle="The Most Popular Pillows",
+                            pageDescription="Find out what pillows other people like the best.")
 
 
 
@@ -46,6 +48,7 @@ def cooling():
                             pillowList = coolingList,
                             pageText = coolingText,
                             pageTitle="The Best Cooling Pillows",
+                            pageDescription="The best pillows for people who sleep hot.",
                             chartImage = "static/assets/cooling-chart.png")
 
 
@@ -56,6 +59,7 @@ def thin():
                             pillowList = thinList,
                             pageText = thinText,
                             pageTitle="The Best Thin Pillows",
+                            pageDescription="The best low profile pillows for people who sleep on their stomach."
                           )
 
 
@@ -65,7 +69,8 @@ def memory_foam():
     return render_template('page_template.html',
                             pillowList = memoryFoamList,
                             pageText = memoryFoamText,
-                            pageTitle="The Best Memory Foam Pillows")
+                            pageTitle="The Best Memory Foam Pillows",
+                            pageDescription="The best pillows for people who like a warm cushiony feel.")
 
 
 @app.route("/shredded-foam")
@@ -74,7 +79,8 @@ def shredded_foam():
     return render_template('page_template.html',
                             pillowList = shreddedFoamList,
                             pageText = shreddedFoamText,
-                            pageTitle="The Best Shredded Foam Pillows")
+                            pageTitle="The Best Shredded Foam Pillows",
+                            pageDescription="The best pillows for people who want memory foam without the warmth.")
 
 
 @app.route("/pillowcases")
@@ -83,10 +89,13 @@ def pillowcases():
     return render_template('page_template.html',
                             pillowList = pillowcaseList,
                             pageText = pillowcaseText,
-                            pageTitle="The Best Pillowcases")
+                            pageTitle="The Best Pillowcases",
+                            pageDescription="The best pillowcases for every type of pillow.")
 
 
 @app.route("/mobile-nav")
 def mobile_nav():
 
-    return render_template('mobile_nav.html')
+    return render_template('mobile_nav.html',
+                           pageTitle="Pillowsmith - Mobile Navigation",
+                           pageDescription="The best pillows for every type of sleeper.")
