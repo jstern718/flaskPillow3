@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template, request
+from flask import Flask, render_template, send_from_directory
 
 app = Flask(__name__)
 env_config = os.getenv("PROD_APP_SETTINGS", "config.DevelopmentConfig")
@@ -99,3 +99,9 @@ def mobile_nav():
     return render_template('mobile_nav.html',
                            pageTitle="Pillowsmith - Mobile Navigation",
                            pageDescription="The best pillows for every type of sleeper.")
+
+
+@app.route("/sitemap.xml")
+def sitemap():
+
+    return send_from_directory(app.root_path, 'sitemap.xml')
