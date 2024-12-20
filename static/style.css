@@ -8,11 +8,23 @@ accordion background: #c7d2fe
 
 /** Section: Light Mode */
 @media (prefers-color-scheme: light) {
+
+    .cat-image{
+        border: whitesmoke 6px solid;
+    }
+
     .mobile-nav{
+
+
+
+    }
+
+    .mobile-nav-list-holder{
         background-color: white;
         color: black;
 
     }
+
     .mobile-page-link{
         color: black;
     }
@@ -46,10 +58,21 @@ accordion background: #c7d2fe
 /** Section: Dark Mode */
 @media (prefers-color-scheme: dark) {
 
+    .cat-image{
+        box-shadow: 7px 7px 10px #5c5c5c;
+    }
+
     .mobile-nav{
-        background-color: rgb(42, 29, 67);
         object-fit: expand;
 
+    }
+
+    .mobile-nav-list-holder{
+        background-color: rgb(42, 29, 67);
+    }
+
+    .nav-expand{
+        height: 100%;
     }
 
     .mobile-page-link{
@@ -71,15 +94,14 @@ accordion background: #c7d2fe
         color: lightgray !important;
     }
 
-    .nav-expand{
-        height: 100%;
-    }
-
     #sidebar{
         background: linear-gradient(to bottom,
                       rgba(10, 12, 18, 0.8),
                       rgba(29, 29, 29, 0.5));
-        color: lightgray
+    }
+
+    .page-link{
+            color: lightgray;
     }
 
     #sidebar nav a:hover {
@@ -341,7 +363,6 @@ accordion background: #c7d2fe
 
     .cat-image{
         content: "";
-        border: whitesmoke 6px solid;
         width: 100%;
     }
 
@@ -387,6 +408,8 @@ accordion background: #c7d2fe
         flex-direction: column;
     }
 
+    /** Sub-Section: Mobile navigation page */
+
     .mobile-nav{
        text-align: center;
        font-size: 2.5rem;
@@ -415,6 +438,8 @@ accordion background: #c7d2fe
         text-align: center;
 
     }
+
+    /** _ */
 
    .form-div{
         display: none;

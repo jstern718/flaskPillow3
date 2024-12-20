@@ -89,7 +89,4 @@ def pillowcases():
 @app.route("/mobile-nav")
 def mobile_nav():
 
-    return render_template('mobile_nav.html',
-                            pillowList = pillowcaseList,
-                            pageText = pillowcaseText,
-                            pageTitle="The Best Pillowcases")
+    return render_template('mobile_nav.html')
