@@ -6,6 +6,7 @@ blue/hover: #2563eb
 accordion background: #c7d2fe
 */
 
+/** Section: Light Mode */
 @media (prefers-color-scheme: light) {
     .mobile-nav{
         background-color: white;
@@ -30,6 +31,7 @@ accordion background: #c7d2fe
         color:#002366;
         text-shadow: gray 1px 1px 1px;
 
+
     }
 
     .pillow-item{
@@ -41,6 +43,7 @@ accordion background: #c7d2fe
     }
 }
 
+/** Section: Dark Mode */
 @media (prefers-color-scheme: dark) {
 
     .mobile-nav{
@@ -112,69 +115,87 @@ accordion background: #c7d2fe
 /* Section: Everything - Applies to both Mobile and Desktop */
 @media only screen and (min-width: 0px){
 
-
-    /** SubSection: Accordion (all) */
-
-    .open-accordion{
-        background-color: #c7d2fe;
-        border-bottom-left-radius: 12px;
-        border-bottom-right-radius: 12px;;
-        background-color: transparent;
-        padding-right: 1rem;
-        display: flex;
-        flex-direction: column;
-        padding-top: 0;
-        padding-bottom: 1rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
+    .closed{
+        display: none;
     }
 
-    .open-accordion-ul{
-        display: flex;
-        flex-direction: column;
-        background-color: transparent;
-
-    }
+    /** Sub-Section: Accordion (everything) */
 
     .accordion-space{
-
         background-color: transparent;
     }
 
     .accordion-holder{
         background-color: #c7d2fe;
-        border-radius: 12px;
-        box-shadow: 4px 4px 4px rgba(128, 128, 128, 0.65);
+        border-radius: 26px;
+        box-shadow: 8px 8px 8px rgba(128, 128, 128, 0.65);
         margin-bottom: 2rem;
-
     }
 
     .accordion-title{
         color: #699bd1;
         font-weight: 600;
         text-align: left;
-        padding-top: 2rem;
         margin-bottom: 0;
-        padding-left: 2rem;
-
     }
 
-    .closed{
-        display: none;
+    /** Mini-Section: Accordion Content/List */
+
+    .open-accordion{
+        display: flex;
+        flex-direction: column;
+        background-color: #c7d2fe;
+
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;;
+        background-color: transparent;
+
+        padding-top: 0;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .closedLi::marker{
+        color: #699bd1;
+    }
+
+    .openLi{
+        font-size: small;
+        margin-left: .5rem;
+        margin-right: .5rem;
+        margin-bottom: .5rem;
+        margin-top: 1rem;
     }
 
     .openLi::marker{
         color: #699bd1;
     }
 
-    .openLi{
-        font-size: small;
-        margin: .5rem;
+    /** Mini-Section: Accordion Button */
+
+    .read-more-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: transparent;
     }
 
-    .closedLi::marker{
+    .read-more-button {
+        background-color: transparent;
         color: #699bd1;
+        box-shadow: none;
+        justify-content: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
+
+    .read-more-button:focus{
+        outline: 0;
+    }
+
+
+    /** Sub-Section: Main Page (everything) */
 
     .main-article{
         margin-left: 0;
@@ -185,15 +206,14 @@ accordion background: #c7d2fe
         display: flex;
         flex-direction: column;
         width: 100%;
-        box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3); /* Optional: Add some shadow for better visual separation */
+        box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
         border-radius: 8px; /* Optional: Add rounded corners */
         overflow: hidden; /* Ensure content doesn't overflow the card */
         padding: 0;
         border: 1px solid lightgray;
-
     }
 
-    .home-box img{
+    .home-box-top{
         width: 100%;
         height: auto;
     }
@@ -228,39 +248,8 @@ accordion background: #c7d2fe
         background-color: #2563eb;
     }
 
-    .typed-cursor {
-        display: none;
-    }
 
-    .closed {
-        display: none;
-    }
-
-    .read-more-div {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        background-color: transparent;
-
-
-    }
-
-    .read-more-button {
-        background-color: transparent;
-        color: #699bd1;
-        box-shadow: none;
-        justify-content: center;
-        margin-left: 1rem;
-        margin-right: 1rem;
-
-    }
-
-    .read-more-button:focus{
-        outline: 0;
-    }
-
-
-  /** hides all photos that would appear in pillow cards */
+  /** Sub-Section: Photos: hides all photos in pillow cards */
 
     .photo1{
         display: none;
@@ -269,44 +258,12 @@ accordion background: #c7d2fe
         display: none;
     }
 
-  /**_*/
-
-    #zero-state {
-        margin: 2rem auto;
-        text-align: center;
-        color: #818181;
-    }
-
-    #zero-state a {
-        color: inherit;
-    }
-
-    #zero-state a:hover {
-        color: #121212;
-    }
-
-    #error-page {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
-
-    input{
-        box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.2), 0 1px 2px hsla(0, 0%, 0%, 0.2);
-    }
 }
 
 /* Section: Mobile Styling */
 @media only screen and (max-aspect-ratio: 9.99/10) {
 
-    .photo2{
-        display: none;
-    }
-    :root {
-        --divisor: 1.5;
-    }
+
     .item-title{
         font-size: medium;
     }
@@ -331,9 +288,6 @@ accordion background: #c7d2fe
     .active{
         display: none;
     }
-    /* .hide1{
-        display: none
-    } */
 
     p{
         text-align:left;
@@ -502,13 +456,14 @@ accordion background: #c7d2fe
 
     .main-list-item{
         padding-bottom: 0.5rem;
+        margin: 1rem;
     }
 
-    /** Sub-Section: accordion styling (mobile)*/
+    /** Sub-Section: accordion (mobile)*/
 
     .accordion-space{
         margin-left: 1.5rem;
-        margin-right: 1.5rem;
+        margin-right: 2rem;
         background-color: transparent;
     }
 
@@ -521,7 +476,12 @@ accordion background: #c7d2fe
     }
 
     .accordion-title{
-        font-size: x-large;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        font-size: xxx-large;
+        padding-top: 4rem;
+        margin-bottom: 0;
+        padding-left: 3rem;
     }
 
     .accordion-bullet{
@@ -570,7 +530,11 @@ accordion background: #c7d2fe
 
     .open-accordion{
         margin: 1rem;
-        padding: 2rem;
+        padding-top: .25rem;
+        padding-left: 2rem;
+        padding-right: 3rem;
+        padding-bottom: 2rem;
+        text-align: justify;
     }
 
 
@@ -856,7 +820,7 @@ accordion background: #c7d2fe
 
     .pillow-list{
         margin-left: 1rem;
-        margin-right: .5rem;
+        margin-right: 1rem;
         padding: 0;
         list-style: none;
     }
@@ -864,10 +828,10 @@ accordion background: #c7d2fe
 
     .pillow-item{
 
-        border-radius: 10px;
-        margin-left: .5rem;
+        border-radius: 26px;
+        margin-left: 1ch;
         margin-right: 1rem;
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
         padding: 1rem;
 
 
@@ -879,8 +843,8 @@ accordion background: #c7d2fe
     }
 
     .pillow-num{
-        padding-right: 1.5rem;
-        padding-left: .5rem;
+        padding-right: 2rem;
+        padding-left: 1rem;
         margin-right: 1.5rem;
         align-content: center;
         border-right: lightgray 1px solid;
@@ -890,8 +854,8 @@ accordion background: #c7d2fe
     }
 
     .pillow-non-num{
-        margin-left: 0;
-        margin-right: 1rem;
+        margin-left: .5rem;
+        margin-right: 2rem;
     }
 
     .pillow-intro{
@@ -910,6 +874,7 @@ accordion background: #c7d2fe
         color: #718096;
         font-weight: 400;
         font-size: small;
+        text-align: pretty;
     }
 
     .pillow-button-div{
@@ -1008,11 +973,15 @@ accordion background: #c7d2fe
     }
 
     accordion-holder{
-        margin-left: 1.5rem;
+        margin-left: .5rem;
         margin-right: 2rem;
         padding-right: 1rem;
+    }
 
-
+    .accordion-title{
+        font-size: large;
+        padding-top: 2rem;
+        padding-left: 2.5rem;
     }
 
     .accordion-bullet{
@@ -1220,6 +1189,7 @@ accordion background: #c7d2fe
         order: 1;
         line-height: 1;
         opacity: 0.7;
+
     }
 
     #sidebar > div {
@@ -1546,7 +1516,7 @@ accordion background: #c7d2fe
 
     .pillow-item{
 
-        border-radius: 10px;
+        border-radius: 18px;
         margin: 1rem;
         margin-right: 1.2rem;
         padding: 1rem;
@@ -1644,12 +1614,6 @@ accordion background: #c7d2fe
         padding-right: 0.5rem;
     }
 
-    .photo2{
-        display: none;
-    }
-    :root {
-        --divisor: 1.5;
-    }
     .pillow-intro{
         font-size: medium;
         text-align: center;
@@ -1694,12 +1658,6 @@ accordion background: #c7d2fe
         padding-right: 0.5rem;
     }
 
-    .photo2{
-        display: none;
-    }
-    :root {
-        --divisor: 1.5;
-    }
     .pillow-intro{
         font-size: medium;
         text-align: center;
@@ -1743,12 +1701,6 @@ accordion background: #c7d2fe
         padding-right: 0.5rem;
     }
 
-    .photo2{
-        display: none;
-    }
-    :root {
-        --divisor: 1.5;
-    }
     .pillow-intro{
         font-size: medium;
         text-align: center;
@@ -1791,9 +1743,6 @@ accordion background: #c7d2fe
         padding-right: 0.5rem;
     }
 
-    :root {
-        --divisor: 2.7;
-    }
     .pillow-intro{
         font-size: large;
         text-align: center;

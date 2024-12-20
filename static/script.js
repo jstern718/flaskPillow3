@@ -6,12 +6,4 @@ function clickFunctionOpen() {
         openAccordion[i].classList.toggle("closed");
     }
 
-    const openClass = document.getElementsByClassName("open-class")[0];
-    openClass.classList.toggle("closed");
-
-
-    const closedClass = document.getElementsByClassName("closed-class")[0];
-    closedClass.classList.toggle("closed");
-
-
 }
