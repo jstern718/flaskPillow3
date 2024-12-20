@@ -2,7 +2,7 @@
 
 {% block page %}
     <div class = "main-div">
-        <div>
+        <div class="destop-header moveOver">
             {% set affiliate_wording = "* As an Amazon Affiliate - and/or member of other affiliate programs - when you buy through our links, we may earn a commission." %}
             <p class = "affiliate-desktop">{{affiliate_wording}}</p>
             <img src="static/assets/hero6.jpg" alt="Pillowsmith banner with a purple background. In front of the background is an illustrated woman sleeping on a pillow and a real cat sleeping on a different people (all in black & white). The text reads 'Pillowsith: Sleep like a kitten'" class ="hero-img"/>
@@ -13,25 +13,36 @@
             <div class="mobile-line">
                 <div class="hamburger-horizontal">
                     <div class="hamburger-holder">
-                            <a type='button' href="/mobilenav" class="hamburger-icon">
+                            <a type='button' href="/mobile-nav" class="hamburger-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#5f6368"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/></svg>
                             </a>
                     </div>
                 </div>
-                <div class="image-div">
+                <div class="mobile-image-div">
                     <img src="static/assets/PillowsmithMobile.png" alt="Pillowsmith banner with multiple illustrated pillows and a real orang cat on a purlpe pillow. The text reads 'Pillowsith: Sleep like a kitten'" class="cat-image"/>
                 </div>
             </div>
         </div>
         <div>
             <article class="main-article">
-                <ul class="main-list">
-                    {% for item in mainList: %}
-                            <li class="main-list-item">
-                                {% include 'main_card.html'%}
-                            </li>
-                    {% endfor %}
-                </ul>
+                <div class="desktop-article moveOver">
+                    <ul class="main-list-desktop">
+                        {% for item in mainList: %}
+                                <li class="main-list-item">
+                                    {% include 'main_card.html'%}
+                                </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="mobile-article">
+                    <ul class="main-list-mobile">
+                        {% for item in mainList: %}
+                                <li class="main-list-item">
+                                    {% include 'main_card.html'%}
+                                </li>
+                        {% endfor %}
+                    </ul>
+                </div>
             </article>
         </div>
     </div>

@@ -1,0 +1,50 @@
+{% for item in pageText %}
+    <li class="accordion-bullet">
+        <p>
+            {{ item }}
+        </p>
+    </li>
+{% endfor %}
+
+
+// document.querySelector(
+//         '.read-less-button'
+//     ).addEventListener(
+//         'click', clickFunctionClose
+//     );
+
+
+    // function handleResize() {
+    //     if (window.innerWidth > 600) {
+    //         openAccordion.style.display = "block";
+    //         closedAccordion.style.display = "block";
+    //     } else {
+    //         if (openAccordion.classList.contains("open")) {
+    //             openAccordion.style.display = "block";
+    //             closedAccordion.style.display = "none";
+    //         } else {
+    //             openAccordion.style.display = "none";
+    //             closedAccordion.style.display = "block";
+    //         }
+    //     }
+    // }
+
+    // window.addEventListener('resize', handleResize);
+
+    // Initial check on page load
+    // handleResize();
+
+
+    <div class="open-accordion" >
+        <p class="openP">
+            {{ pageText }}
+        </p>
+        <div class="read-more-div">
+            <button
+                type="button"
+                class="read-more-button"
+                onclick="clickFunctionClose()">
+                Show Less
+            </button>
+        </div >
+    </div>

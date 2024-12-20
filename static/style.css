@@ -1,18 +1,179 @@
 /** Section: colors */
 
 /**
-button blue: #5082ef
-button blue:hover: #2563eb
-
+blue: #5082ef
+blue/hover: #2563eb
+accordion background: #c7d2fe
 */
+
+@media (prefers-color-scheme: light) {
+    .mobile-nav{
+        background-color: white;
+        color: black;
+
+    }
+    .mobile-page-link{
+        color: black;
+    }
+    #sidebar{
+        background: linear-gradient(to bottom,
+                      rgba(0, 0, 0, 0.1),
+                      rgba(0, 0, 0, 0.4));
+    }
+
+    #sidebar nav a:hover {
+        background: #e3e3e3;
+    }
+
+    #sidebar h1 {
+        border-top: 1px solid #e3e3e3;
+        color:#002366;
+        text-shadow: gray 1px 1px 1px;
+
+    }
+
+    .pillow-item{
+        background: linear-gradient(to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.1));
+        box-shadow: 4px 4px 4px rgba(128, 128, 128, 0.65);
+        border: 1px solid lightgray;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+
+    .mobile-nav{
+        background-color: rgb(42, 29, 67);
+        object-fit: expand;
+
+    }
+
+    .mobile-page-link{
+        color: lightgray !important;
+    }
+
+    h2{
+        color:lightgray;
+    }
+
+    .accordion-holder{
+        background-color: rgb(42, 29, 67) !important;
+        box-shadow: 4px 4px 4px rgba(25, 25, 25, 0.65) !important;
+        color: lightgray;
+        border: 1px solid rgb(37, 37, 52);
+    }
+
+    .pillow-title{
+        color: lightgray !important;
+    }
+
+    .nav-expand{
+        height: 100%;
+    }
+
+    #sidebar{
+        background: linear-gradient(to bottom,
+                      rgba(10, 12, 18, 0.8),
+                      rgba(29, 29, 29, 0.5));
+        color: lightgray
+    }
+
+    #sidebar nav a:hover {
+        background: #013153;
+    }
+
+    #sidebar h1 {
+
+        color:#1c3f81;
+        text-shadow: rgba(128, 128, 128, 0.219) 3px 3px 2px;
+        text-anchor:start;
+        text-rendering:optimizeLegibility;
+        text-orientation: mixed;
+    }
+
+    .pillow-item{
+        background: linear-gradient(to bottom,
+        rgba(67, 79, 101, 0.6),
+        rgba(58, 88, 106, 0.6));
+        box-shadow: 4px 4px 4px rgba(25, 25, 25, 0.65) !important;
+        border: 1px solid rgb(37, 37, 52);
+
+    }
+    .affiliate-desktop{
+        color:lightgray
+    }
+    .affiliate-mobile{
+        color:lightgray
+    }
+
+}
 
 /* Section: Everything - Applies to both Mobile and Desktop */
 @media only screen and (min-width: 0px){
 
-    .main-list{
-        list-style-type: none;
-        padding-left: 0;
-        padding-right: 0.5rem;
+
+    /** SubSection: Accordion (all) */
+
+    .open-accordion{
+        background-color: #c7d2fe;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;;
+        background-color: transparent;
+        padding-right: 1rem;
+        display: flex;
+        flex-direction: column;
+        padding-top: 0;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .open-accordion-ul{
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+
+    }
+
+    .accordion-space{
+
+        background-color: transparent;
+    }
+
+    .accordion-holder{
+        background-color: #c7d2fe;
+        border-radius: 12px;
+        box-shadow: 4px 4px 4px rgba(128, 128, 128, 0.65);
+        margin-bottom: 2rem;
+
+    }
+
+    .accordion-title{
+        color: #699bd1;
+        font-weight: 600;
+        text-align: left;
+        padding-top: 2rem;
+        margin-bottom: 0;
+        padding-left: 2rem;
+
+    }
+
+    .closed{
+        display: none;
+    }
+
+    .openLi::marker{
+        color: #699bd1;
+    }
+
+    .openLi{
+        font-size: small;
+        margin: .5rem;
+    }
+
+    .closedLi::marker{
+        color: #699bd1;
     }
 
     .main-article{
@@ -71,57 +232,33 @@ button blue:hover: #2563eb
         display: none;
     }
 
-    .read-more-div{
-        display: flex;
-        flex-direction: row;
-        justify-content: center; /* Center the button horizontally */
-    }
-
-    .read-more-button{
-        background-color: transparent;
-        box-shadow: none;
-        border: none;
-        color: #699bd1;
-    }
-
-    .read-more-button:active{
-        background-color: #699bd1;
-        opacity: 0.5;
-        color: white;
-        border-style: none;
-        box-shadow: none;
-    }
-
-    .read-less-button{
-        background-color: transparent;
-        box-shadow: none;
-        border: none;
-        width: 200px;
-        color: #699bd1;
-    }
-
-    .read-less-button:active{
-        background-color: #699bd1;
-        opacity: 0.5;
-        color: white;
-        border: none;
-        box-shadow: none;
-    }
-
-    .read-less-div{
-        display: flex;
-        flex-direction: row;
-        justify-content: center; /* Center the button horizontally */
-        align-items: center;
-    }
-
-    .open{
-        color: inherit;
-    }
-
-    .closed{
+    .closed {
         display: none;
     }
+
+    .read-more-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: transparent;
+
+
+    }
+
+    .read-more-button {
+        background-color: transparent;
+        color: #699bd1;
+        box-shadow: none;
+        justify-content: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+
+    }
+
+    .read-more-button:focus{
+        outline: 0;
+    }
+
 
   /** hides all photos that would appear in pillow cards */
 
@@ -162,7 +299,8 @@ button blue:hover: #2563eb
 }
 
 /* Section: Mobile Styling */
-@media only screen and (max-aspect-ratio: 1/1) {
+@media only screen and (max-aspect-ratio: 9.99/10) {
+
     .photo2{
         display: none;
     }
@@ -178,7 +316,7 @@ button blue:hover: #2563eb
     }
 
     .affiliate-mobile{
-        font-size:xx-small;
+        font-size:small;
         margin-left: 1rem;
         margin-right: 1rem;
     }
@@ -234,11 +372,17 @@ button blue:hover: #2563eb
         flex-direction: row;
     }
 
-    .image-div{
+    .mobile-image-div{
         display: flex;
         flex-direction: row;
+        justify-content: flex-end;
         margin-bottom: 1rem;
-        max-width: 90%;
+        max-width: 100%;
+        flex-grow: 1.25;
+        margin-top:1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+
     }
 
     .cat-image{
@@ -251,18 +395,23 @@ button blue:hover: #2563eb
         display: none;
     }
 
+    .desktop-article{
+        display: none;
+    }
+
     .mobile-header-nav{
         display: flex;
         flex-direction: row;
+        justify-items: flex-end;
+        flex-grow: 2;
     }
 
     .mobile-header{
         display: flex;
         flex-direction: column;
         justify-items: flex-end;
-        margin-right: 1rem;
-        margin-left: 1rem;
-        width: 100% - 2rem;
+        margin-right: 2rem;
+        margin-left: 0rem;
     }
 
     .mobile-line{
@@ -287,27 +436,28 @@ button blue:hover: #2563eb
     .mobile-nav{
        text-align: center;
        font-size: 2.5rem;
-       padding: .5rem;
+       padding: 1rem;
        font-family: "Poppins", Arial, Helvetica, sans-serif;
        font-weight: 500;
+
 
     }
 
     .mobile-nav-list{
     display: flex;
     flex-direction: column;
-    opacity: 100%;
-    background-color: white;
+    height: 100%;
+
     }
 
     .mobile-nav-link{
         list-style: none;
+        padding: 2rem;
 
     }
 
     .mobile-page-link{
-        font-size: medium;
-        color: black;
+        font-size: xx-large;
         text-align: center;
 
     }
@@ -335,24 +485,43 @@ button blue:hover: #2563eb
         -moz-osx-font-smoothing: grayscale;
     }
 
-    /** Sub-Section: accordion styling (mobile)*/
-
     .home-box{
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin-left: 1.6rem;
+        margin-right: 2.2rem;
         margin-bottom: 1rem;
-        width: 95%;
+        width: 96%;
+    }
 
-
+    .main-list-mobile{
+        list-style-type: none;
+        padding-left: 0;
+        padding-right: 0.5rem;
+        display: flex;
+        flex-direction: column;
     }
 
     .main-list-item{
         padding-bottom: 0.5rem;
     }
 
+    /** Sub-Section: accordion styling (mobile)*/
+
+    .accordion-space{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        background-color: transparent;
+    }
+
+    accordion-holder{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-right: 1rem;
+        background-color: transparent;
+
+    }
+
     .accordion-title{
-        color: #699bd1;
-        font-weight: 600;
+        font-size: x-large;
     }
 
     .accordion-bullet{
@@ -366,11 +535,11 @@ button blue:hover: #2563eb
         margin-bottom: -5px;
         padding-left: 5px;
         text-wrap: pretty;
-        display: flex;
-        flex-direction: column;
+        transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+        display: block;
     }
 
-    .accordion-bullet::marker{
+    .accordion-bullet:marker{
         color: #699bd1;
     }
 
@@ -392,16 +561,25 @@ button blue:hover: #2563eb
 
     }
 
-    /* .accordion-top{
-        align-self: left;
-        background-color: rgb(199, 210, 254);
-        margin-bottom: 10px;
+    .open-ul{
+        margin: 1rem;
+        padding: 1rem;
+        text-align: justify;
+
     }
 
-    .accordion-bottom{
-        align-self: left;
-        background-color: #699bd1;
-    } */
+    .open-accordion{
+        margin: 1rem;
+        padding: 2rem;
+    }
+
+
+    .read-more-button{
+        padding-bottom: 1rem;
+        font-size: xx-large;
+        margin-bottom: .5rem;
+        margin-top: .5rem;
+    }
 
     a {
     color: #646cff;
@@ -414,8 +592,7 @@ button blue:hover: #2563eb
 
     body {
     margin: 0;
-    display: flex;
-    min-width: 320px;
+    min-width: 100vw;
     min-height: 100vh;
     }
 
@@ -426,14 +603,11 @@ button blue:hover: #2563eb
 
     button {
     border-radius: 8px;
-    /* border: 1px solid transparent; */
     padding: 0.6em 1.2em;
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
-    /* background-color: #1a1a1a; */
     cursor: pointer;
-    /* transition: border-color 0.25s; */
     }
 
     button:hover {
@@ -491,7 +665,6 @@ button blue:hover: #2563eb
         border: none;
         border-radius: 8px;
         padding: 0.5rem 0.75rem;
-        /* box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.2), 0 1px 2px hsla(0, 0%, 0%, 0.2); */
         background-color: white;
         line-height: 1.5;
         margin: 0;
@@ -517,11 +690,6 @@ button blue:hover: #2563eb
         margin: 0;
     }
 
-    .search-row button {
-        flex-shrink: 0;
-        margin-left: 0.5rem;
-    }
-
     button {
         color: #3992ff;
         font-weight: 500;
@@ -532,37 +700,10 @@ button blue:hover: #2563eb
         box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.6), 0 1px 2px hsla(0, 0%, 0%, 0.2);
     }
 
-    button:active {
-        box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.4);
-        transform: translateY(1px);
-    }
-
     #page h1 {
         display: flex;
         align-items: flex-start;
         gap: 1rem;
-    }
-    #page h1 form {
-        display: flex;
-        align-items: center;
-        margin-top: 0.25rem;
-    }
-    #page h1 form button {
-        box-shadow: none;
-        font-size: 1.5rem;
-        font-weight: 400;
-        padding: 0;
-    }
-    #page h1 form button[value="true"] {
-        color: #a4a4a4;
-    }
-    #page h1 form button[value="true"]:hover,
-    #page h1 form button[value="false"] {
-        color: #eeb004;
-    }
-
-    form[action$="destroy"] button {
-        color: #f44250;
     }
 
     .sr-only {
@@ -581,89 +722,6 @@ button blue:hover: #2563eb
         display: none;
     }
 
-    #search-spinner {
-        width: 1rem;
-        height: 1rem;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24'%3E%3Cpath stroke='%23000' strokeLinecap='round' strokeLinejoin='round' strokeWidth='2' d='M20 4v5h-.582m0 0a8.001 8.001 0 00-15.356 2m15.356-2H15M4 20v-5h.581m0 0a8.003 8.003 0 0015.357-2M4.581 15H9' /%3E%3C/svg%3E");
-        animation: spin 1s infinite linear;
-        position: absolute;
-        left: 0.625rem;
-        top: 0.75rem;
-    }
-
-    @keyframes spin {
-        from {
-        transform: rotate(0deg);
-        }
-        to {
-        transform: rotate(360deg);
-        }
-    }
-
-    i {
-        color: #818181;
-    }
-    /* #sidebar nav .active i {
-        color: inherit;
-    }
-
-    #sidebar ul {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-    }
-
-    #sidebar li {
-        margin-bottom: 0.1rem;
-        margin-top: 0.1rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        padding: .2rem;
-        line-height: normal;
-
-    }
-
-    #sidebar nav a {
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: space-between;
-        overflow: hidden;
-        white-space: pre;
-        padding: 0;
-        margin: 0;
-        border-radius: 8px;
-        color: #0047AB;
-        font-size: x-large;
-        gap: 1rem;
-    }
-
-    #sidebar nav a:hover {
-        background: #e3e3e3;
-    }
-
-    #sidebar nav a.active {
-        background: #699bd1;
-        color: white;
-    }
-
-    #sidebar nav a.pending {
-        color: #699bd1;
-    } */
-
-    #detail {
-        flex: 1;
-        display: flex;
-        flex-direction: row;
-
-    }
-
-    #detail.loading {
-        opacity: 0.25;
-        transition: opacity 200ms;
-        transition-delay: 200ms;
-    }
-
     #page {
         max-width: 35rem;
         display: flex;
@@ -672,10 +730,15 @@ button blue:hover: #2563eb
     .page-title{
         text-shadow: 1px 1px 1px gray;
         text-align: center;
-        font-size: x-large;
+        font-size: xxx-large;
         font-weight: 700;
         margin: 0;
         line-height: 1.2;
+        text-wrap: pretty;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     #page h1 + p {
@@ -765,10 +828,6 @@ button blue:hover: #2563eb
         margin: 0 0 0 8rem;
     }
 
-    #page-form p:last-child button[type="button"] {
-        color: inherit;
-    }
-
     .MOBILE-MENU{
         display: none;
     }
@@ -793,11 +852,6 @@ button blue:hover: #2563eb
         margin-right: 8px;
     }
 
-    .divC{
-        margin-left: 8px;
-        margin-right: 8px;
-    }
-
     /** Sub-Section: Pillow Card Styling (mobile)*/
 
     .pillow-list{
@@ -809,13 +863,13 @@ button blue:hover: #2563eb
 
 
     .pillow-item{
-        border: 1px solid lightgray;
+
         border-radius: 10px;
         margin-left: .5rem;
-        margin-right: .5rem;
-        margin-bottom: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 2rem;
         padding: 1rem;
-        box-shadow: 4px 4px 4px rgba(128, 128, 128, 0.65);
+
 
     }
 
@@ -867,8 +921,9 @@ button blue:hover: #2563eb
 
     .pillow-button{
         background-color: #5082ef;
-        margin-top: .5rem;
+        margin-top: 2rem;
         margin-bottom: .5rem;
+        padding: 2rem;
         color: white;
     }
 
@@ -876,11 +931,11 @@ button blue:hover: #2563eb
         background-color: #2563eb;
     }
 
-
 }
 
 /* Section: Desktop Styling - Applies to all desktop sizes */
-@media only screen and (min-width: 677px) {
+@media only screen and (min-aspect-ratio: 10/10){
+
 
     :root {
     font-family: "Poppins", Arial, Helvetica, sans-serif;;
@@ -932,8 +987,12 @@ button blue:hover: #2563eb
         display: none;
     }
 
-    .main-list-item{
-        padding: 0.5rem;
+    .mobile-article{
+        display: none;
+    }
+
+    .main-list-mobile{
+        display: none;
     }
 
     article{
@@ -943,9 +1002,17 @@ button blue:hover: #2563eb
 
     /** accordion styling (desktop)*/
 
-    .accordion-title{
-        color: #699bd1;
-        font-weight: 600;
+    .accordion-space{
+        margin-left: 0;
+        margin-right: 1.25rem;
+    }
+
+    accordion-holder{
+        margin-left: 1.5rem;
+        margin-right: 2rem;
+        padding-right: 1rem;
+
+
     }
 
     .accordion-bullet{
@@ -959,9 +1026,10 @@ button blue:hover: #2563eb
         margin-bottom: -5px;
         padding-left: 5px;
         text-wrap: pretty;
+        transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
     }
 
-    .accordion-bullet::marker{
+    .accordion-bullet:marker{
         color: #699bd1;
     }
 
@@ -984,16 +1052,13 @@ button blue:hover: #2563eb
 
     }
 
-    /* .accordion-top{
-        align-self: left;
-        background-color: rgb(199, 210, 254);
-        margin-bottom: 10px;
+    .read-more-button{
+        padding-bottom: .5rem;
+        padding-top: 0;
+        font-size: medium;
+        margin-bottom: 0;
+        margin-top: 0;
     }
-
-    .accordion-bottom{
-        align-self: left;
-        background-color: #699bd1;
-    } */
 
     .page-title{
         text-shadow: 1px 1px 1px gray;
@@ -1035,15 +1100,12 @@ button blue:hover: #2563eb
     button {
         border-radius: 6px;
         border: none;
-        /* border: 1px solid rgba(0, 71, 171, 0.5) !important; */
         padding: 0.6em 1.2em;
         font-size: 1em;
         font-weight: 500;
         font-family: inherit;
         color: #3992ff;
         background-color: white;
-        cursor: pointer;
-        /* transition: border-color 0.25s; */
         box-shadow: 2px 2px 5px -1px rgba(128, 128, 128, 1);
     }
 
@@ -1064,36 +1126,15 @@ button blue:hover: #2563eb
         a:hover {
             color: #747bff;
         }
-        button {
-            background-color: #f9f9f9;
-        }
+
     }
-
-    /* textarea,
-    input,
-    button {
-        font-size: 1rem;
-        font-family: inherit;
-        border: none;
-        border-radius: 8px;
-        padding: 0.5rem 0.75rem;
-        box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.2), 0 1px 2px hsla(0, 0%, 0%, 0.2);
-        background-color: white;
-        line-height: 1.5;
-        margin: 0;
-    } */
-
 
     textarea:hover,
     input:hover{
         box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.6), 0 1px 2px hsla(0, 0%, 0%, 0.2);
     }
 
-    button:active {
-        box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.4);
-        transform: translateY(1px);
 
-    }
 
     #page h1 {
         display: flex;
@@ -1104,23 +1145,6 @@ button blue:hover: #2563eb
         display: flex;
         align-items: center;
         margin-top: 0.25rem;
-    }
-    #page h1 form button {
-        box-shadow: none;
-        font-size: 1.5rem;
-        font-weight: 400;
-        padding: 0;
-    }
-    #page h1 form button[value="true"] {
-        color: #a4a4a4;
-    }
-    #page h1 form button[value="true"]:hover,
-    #page h1 form button[value="false"] {
-        color: #eeb004;
-    }
-
-    form[action$="destroy"] button {
-        color: #f44250;
     }
 
     .sr-only {
@@ -1163,14 +1187,11 @@ button blue:hover: #2563eb
 
     #sidebar {
         box-shadow: 8px 8px 8px #5c5c5c;
-
         position: fixed;
         left: 0;
         top: 0;
         height: 100%;
-        background: linear-gradient(to bottom,
-                      rgba(0, 0, 0, 0.1),
-                      rgba(0, 0, 0, 0.4));
+
         /* background-image: url('pillowsmith/src/assets/gray-bg.jpg'); */
         background-repeat:repeat;
         background-size: 200px;
@@ -1196,12 +1217,9 @@ button blue:hover: #2563eb
         justify-content: center;
         margin: 0;
         padding: .5rem 2rem 0rem 0rem;
-        border-top: 1px solid #e3e3e3;
         order: 1;
         line-height: 1;
-        color:#002366;
         opacity: 0.7;
-        text-shadow: gray 1px 1px 1px;
     }
 
     #sidebar > div {
@@ -1326,9 +1344,7 @@ button blue:hover: #2563eb
         text-align: center;
     }
 
-    #sidebar nav a:hover {
-        background: #e3e3e3;
-    }
+
 
     #sidebar nav a:active{
         background-color: #699bd1;
@@ -1466,10 +1482,6 @@ button blue:hover: #2563eb
         margin: 0 0 0 8rem;
     }
 
-    #page-form p:last-child button[type="button"] {
-        color: inherit;
-    }
-
     .MOBILE-MENU{
         display: none;
     }
@@ -1479,15 +1491,6 @@ button blue:hover: #2563eb
     }
 
     .cat-image{
-        display: none;
-    }
-
-    .wide-open{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .wide-close{
         display: none;
     }
 
@@ -1522,7 +1525,7 @@ button blue:hover: #2563eb
         top: 20px;
         left: 0px;
         width: 100%;
-        padding-right: 1rem;
+        padding-right: .5rem;
         padding-left: .5rem;
     }
 
@@ -1542,15 +1545,13 @@ button blue:hover: #2563eb
     }
 
     .pillow-item{
-        border: 1px solid lightgray;
+
         border-radius: 10px;
         margin: 1rem;
         margin-right: 1.2rem;
         padding: 1rem;
         box-shadow: 4px 4px 4px rgba(128, 128, 128, 0.65);
-        background: linear-gradient(to bottom,
-                      rgba(0, 0, 0, 0),
-                      rgba(0, 0, 0, 0.1));
+
     }
 
     .pillow-list-item{
@@ -1626,21 +1627,21 @@ button blue:hover: #2563eb
 
     }
 
-    .main-div{
-        width: calc(100% - 16rem);
-        margin-left: 16rem;
-    }
-
-    .main-list{
+    .main-list-desktop{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         width: 100%;
+        list-style-type: none;
+        padding-left: 0;
     }
 
     .main-list-item{
         flex: 1 100%; /* Each item takes up 50% of the container width */
         box-sizing: border-box; /* Ensure padding and border are included in the width */
+        padding-bottom: 0.5rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
 
     .photo2{
@@ -1676,21 +1677,21 @@ button blue:hover: #2563eb
 
     }
 
-    .main-div{
-        width: calc(100% - 17rem);
-        margin-left: 17rem;
-    }
-
-    .main-list{
+    .main-list-desktop{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         width: 100%;
+        list-style-type: none;
+        padding-left: 0;
     }
 
     .main-list-item{
         flex: 1 1 50%; /* Each item takes up 50% of the container width */
         box-sizing: border-box; /* Ensure padding and border are included in the width */
+        padding-bottom: 0.5rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
 
     .photo2{
@@ -1725,21 +1726,21 @@ button blue:hover: #2563eb
         margin-left: 19rem;
     }
 
-    .main-div{
-        width: calc(100% - 19rem);
-        margin-left: 19rem;
-    }
-
-    .main-list{
+    .main-list-desktop{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         width: 100%;
+        list-style-type: none;
+        padding-left: 0;
     }
 
     .main-list-item{
         flex: 1 1 50%; /* Each item takes up 50% of the container width */
         box-sizing: border-box; /* Ensure padding and border are included in the width */
+        padding-bottom: 0.5rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
 
     .photo2{
@@ -1773,21 +1774,21 @@ button blue:hover: #2563eb
 
     }
 
-    .main-div{
-        width: calc(100% - 22rem);
-        margin-left: 22rem;
-    }
-
-    .main-list{
+    .main-list-desktop{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         width: 100%;
+        list-style-type: none;
+        padding-left: 0;
     }
 
     .main-list-item{
         flex: 1 1 30%; /* Each item takes up 33% of the container width */
         box-sizing: border-box; /* Ensure padding and border are included in the width */
+        padding-bottom: 0.5rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
 
     :root {

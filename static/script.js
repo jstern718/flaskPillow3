@@ -1,20 +1,17 @@
 function clickFunctionOpen() {
+
     console.log("open script running");
-    const openAccordion = document.getElementById("open-accordion");
-    const closedAccordion = document.getElementById("closed-accordion");
-    closedAccordion.classList.remove("open");
-    closedAccordion.classList.add("closed");
-    openAccordion.classList.remove("closed");
-    openAccordion.classList.add("open");
-}
+    const openAccordion = document.getElementsByClassName("openLi");
+    for (let i = 0; i < openAccordion.length; i++) {
+        openAccordion[i].classList.toggle("closed");
+    }
 
-function clickFunctionClose() {
-    console.log("close script running");
-    const openAccordion = document.getElementById("open-accordion");
-    const closedAccordion = document.getElementById("closed-accordion");
-    openAccordion.classList.remove("open");
-    openAccordion.classList.add("closed");
-    closedAccordion.classList.remove("closed");
-    closedAccordion.classList.add("open");
-}
+    const openClass = document.getElementsByClassName("open-class")[0];
+    openClass.classList.toggle("closed");
 
+
+    const closedClass = document.getElementsByClassName("closed-class")[0];
+    closedClass.classList.toggle("closed");
+
+
+}
