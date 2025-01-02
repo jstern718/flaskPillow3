@@ -281,6 +281,22 @@ accordion background: #c7d2fe
         display: none;
     }
 
+ /** Sub-Section: deals page */
+
+    a .no-button{
+        color: blue;
+    }
+
+    .no-button{
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        padding: 0px;
+        margin: 0px;
+        z-index: 1;
+
+    }
+
 }
 
 /* Section: Mobile Styling */
@@ -857,7 +873,10 @@ accordion background: #c7d2fe
         margin-left: 1ch;
         margin-right: 1rem;
         margin-bottom: 2.5rem;
-        padding: 1rem;
+        padding-right: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 2rem;
 
 
     }
@@ -865,6 +884,7 @@ accordion background: #c7d2fe
     .pillow-list-item{
         display: flex;
         flex-direction: row;
+
     }
 
     .pillow-num{
@@ -896,10 +916,11 @@ accordion background: #c7d2fe
     }
 
     .pillow-text{
-        color: #718096;
         font-weight: 400;
-        font-size: small;
-        text-align: pretty;
+        color: gray;
+        font-size: medium;
+        text-decoration: inherit;
+        padding: none;
     }
 
     .pillow-button-div{
@@ -920,6 +941,12 @@ accordion background: #c7d2fe
     .pillow-button:hover{
         background-color: #2563eb;
     }
+
+    /** Sub-Section: deals page */
+
+
+
+
 
 }
 
@@ -1077,8 +1104,9 @@ accordion background: #c7d2fe
     }
 
     a {
-        font-weight: 500;
-        color: #646cff;
+        font-weight: 400;
+        color: gray;
+        font-size: medium;
         text-decoration: inherit;
     }
 
@@ -1501,7 +1529,7 @@ accordion background: #c7d2fe
     }
 
     .card-div{
-        margin-right: 20px;
+
     }
 
     .divC{
@@ -1544,7 +1572,10 @@ accordion background: #c7d2fe
         border-radius: 18px;
         margin: 1rem;
         margin-right: 1.2rem;
-        padding: 1rem;
+        padding-right: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 2rem;
         box-shadow: 4px 4px 4px rgba(128, 128, 128, 0.65);
 
     }
@@ -1568,9 +1599,19 @@ accordion background: #c7d2fe
     }
 
     .pillow-text{
-        color: #718096;
         font-weight: 400;
-        font-size: small;
+        font-size: medium;
+        text-decoration: inherit;
+        padding: none;
+
+    }
+
+    .gray-text{
+        color:gray;
+        font-weight: 400;
+        font-size: medium;
+        text-decoration: inherit;
+        padding: none;
     }
 
     .pillow-num{
@@ -1604,6 +1645,17 @@ accordion background: #c7d2fe
 
     .mobile-nav-list{
         display: none;
+    }
+
+    .no-button{
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        padding: 0px;
+        margin: 0px;
+        font-weight: 900;
+        color: royalblue;
+
     }
 
 }
