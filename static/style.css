@@ -144,15 +144,15 @@ accordion background: #c7d2fe
 
     /** Sub-Section: Accordion (everything) */
 
-    .accordion-space{
-        background-color: transparent;
-    }
-
     .accordion-holder{
         background-color: #c7d2fe;
         border-radius: 26px;
         box-shadow: 8px 8px 8px rgba(128, 128, 128, 0.65);
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
+        margin-left: 0;
+        margin-right: 0;
+        padding-bottom: 1rem;
+
     }
 
     .accordion-title{
@@ -172,15 +172,22 @@ accordion background: #c7d2fe
         border-bottom-left-radius: 12px;
         border-bottom-right-radius: 12px;;
         background-color: transparent;
-
-        padding-top: 0;
-        padding-bottom: 1rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
     }
 
     .closedLi::marker{
         color: #699bd1;
+    }
+
+
+    .open-ul{
+        /* margin-left: 1rem;
+        margin-right: 1rem;
+        padding-left: 1rem;
+        padding-right: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: justify; */
+
     }
 
     .openLi{
@@ -294,7 +301,16 @@ accordion background: #c7d2fe
         padding: 0px;
         margin: 0px;
         z-index: 1;
+    }
 
+    .discount-text{
+        font-weight: 600;
+        color: red;
+    }
+
+    .non-discount-text{
+        font-weight: 400;
+        color: black;
     }
 
 }
@@ -508,21 +524,18 @@ accordion background: #c7d2fe
         background-color: transparent;
     }
 
-    accordion-holder{
-        margin-left: 1rem;
-        margin-right: 1rem;
-        padding-right: 1rem;
-        background-color: transparent;
-
+    .accordion-holder{
+        padding-top: 1rem;
+        padding-right: 5rem;
+        padding-left: 2.5rem;
     }
 
     .accordion-title{
-        margin-top: 1rem;
-        margin-left: 1rem;
-        font-size: xxx-large;
-        padding-top: 4rem;
+        margin-top: 2rem;
+        font-size: x-large;
+        padding-top: 1rem;
         margin-bottom: 0;
-        padding-left: 3rem;
+        padding-left: 2.5rem;
     }
 
     .accordion-bullet{
@@ -562,19 +575,7 @@ accordion background: #c7d2fe
 
     }
 
-    .open-ul{
-        margin: 1rem;
-        padding: 1rem;
-        text-align: justify;
-
-    }
-
     .open-accordion{
-        margin: 1rem;
-        padding-top: .25rem;
-        padding-left: 2rem;
-        padding-right: 3rem;
-        padding-bottom: 2rem;
         text-align: justify;
     }
 
@@ -884,6 +885,8 @@ accordion background: #c7d2fe
     .pillow-list-item{
         display: flex;
         flex-direction: row;
+        padding-left: 1rem;
+        padding-right: 1rem;
 
     }
 
@@ -943,7 +946,28 @@ accordion background: #c7d2fe
     }
 
     /** Sub-Section: deals page */
+a .no-button{
+        color: blue;
+    }
 
+    .no-button{
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        padding: 0px;
+        margin: 0px;
+        z-index: 1;
+    }
+
+    .discount-text{
+        font-weight: 600;
+        color: red;
+    }
+
+    .non-discount-text{
+        font-weight: 400;
+        color: black;
+    }
 
 
 
@@ -1024,10 +1048,10 @@ accordion background: #c7d2fe
         margin-right: 1.25rem;
     }
 
-    accordion-holder{
-        margin-left: .5rem;
-        margin-right: 2rem;
-        padding-right: 1rem;
+    .accordion-holder{
+        padding-top: 0;
+        padding-right: 2rem;
+        padding-left: 1rem;
     }
 
     .accordion-title{
@@ -1583,6 +1607,8 @@ accordion background: #c7d2fe
     .pillow-list-item{
         display: flex;
         flex-direction: row;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     .pillow-intro{
@@ -1602,7 +1628,6 @@ accordion background: #c7d2fe
         font-weight: 400;
         font-size: medium;
         text-decoration: inherit;
-        padding: none;
 
     }
 
@@ -1634,6 +1659,7 @@ accordion background: #c7d2fe
         flex-direction: row;
         justify-content: center;
         margin-bottom: 1rem;
+        cursor: pointer;
     }
 
     .pillow-button{
@@ -1641,6 +1667,11 @@ accordion background: #c7d2fe
         color:white;
         margin-top: .5rem;
         margin-bottom: .5rem;
+    }
+
+    .pillow-button:hover{
+        background-color: #2563eb;
+        cursor:pointer;
     }
 
     .mobile-nav-list{

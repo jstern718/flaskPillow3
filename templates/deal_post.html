@@ -5,16 +5,23 @@
         <div>
             <h3>{{ pillow.intro }}</h3>
             <h4 class="pillow-intro">{{pillow.title}}</h4>
-            <p class="pillow-text">Normal price: {{ pillow.normalprice }}</p>
-            <p class="pillow-text">Discounted price: {{ pillow.dealprice }}</p>
-            <p class="pillow-text">Want to see what we have to say about this type of pillow. See this <a href="{{ pillow.see }}" class="no-button"><span class="pillow-text">discussion.</span></a></p>
-            <div>
+            <p class="non-discount-text">Discounted Price: <span class="discount-text">{{ pillow.dealprice }}</span> (down from {{ pillow.normalprice }})</p>
+            <a href="{{ pillow.link }}">
+                <p class="pillow-text">{{ pillow.discussion }}</p>
+            </a>
+            <a href="{{ pillow.link }}">
+                <p class="pillow-text">Want to see what we have to say about this type of pillow. See this
+                    <a href="{{ pillow.see }}" class="no-button">
+                        <span class="pillow-text">discussion.</span>
+                    </a>
                 </p>
+            </a>
+            <a href="{{ pillow.link }}">
                 <div class="pillow-button-div">
                         <button href="{{ pillow.link }}" class="pillow-button">Shop now at Amazon.com</button>
                 </div>
                 <p class="gray-text ">Posted: {{ pillow.date }}</p>
-            </div>
+            </a>
         </div>
     </a>
     </div>

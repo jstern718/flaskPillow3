@@ -65,8 +65,6 @@
             <div class="mobile-article">
                 <div class="accordion-space">
                     <h2 class="page-title">{{pageTitle}}</h2>
-                    <div class="accordion-holder">
-                        <h3 class="accordion-title">Some Helpful Info:</h3>
                         {% include 'accordion.html' with context %}
                     </div>
                     {% if chartImage %}
@@ -74,7 +72,7 @@
                     {% endif %}
                 </div>
                 {% if type == "pillow" %}
-                    <ul class="pillow-list">
+                    <ul class="pillow-list mobile-article">
                         {% for pillow in pillowList %}
                                 <li class="pillow-item">
                                     {% set pillowNum = loop.index %}
@@ -84,8 +82,8 @@
                     </ul>
                 {% endif %}
                 {% if type == "post" %}
-                    <ul class="pillow-list">
-                        {% for post in dealList %}
+                    <ul class="pillow-list mobile-article">
+                        {% for pillow in pillowList %}
                                 <li class="pillow-item">
                                     {% include 'deal_post.html' %}
                                 </li>
