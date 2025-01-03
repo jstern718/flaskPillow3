@@ -1,4 +1,26 @@
-[x] TODO: only some pages turn blue in sidebar when you are on them
-TODO: ??? make page you were on turn blue in mobile nav
-[x] TODO: work on main pages
-TODO: Research SEO and add meta tags
+Coding:
+
+TODO: [] - make page you were on before turn blue in mobile nav
+
+
+Content:
+
+TODO: [] - deals blog
+TODO: [] - high profile pillows
+TODO: [] - neck pillows
+TODO: [] - latex pillows
+TODO: [] - pillowcases for different type pillows
+TODO: [] - down pillows
+TODO: [] - down alternative pillows
+TODO: [] - overall good deals
+TODO: [] - thin pillow chart
+TODO: [] - memory foam chart
+TODO: [] - shredded foam chart
+
+
+
+Done:
+
+[x]: only some pages turn blue in sidebar when you are on them
+[x]: work on main pages
+[x]: Research SEO and add meta tags
