@@ -37,42 +37,59 @@
             <div class="desktop-article moveOver">
                 <div class="accordion-space">
                     <h2 class="page-title">{{pageTitle}}</h2>
-                    <div class="accordion-holder">
-                        <h3 class="accordion-title">Some Helpful Info:</h3>
-                        {% include 'accordion.html' with context %}
-                    </div>
+                    {% include 'accordion.html' with context %}
                     {% if chartImage %}
                         <img src="{{ chartImage }}" width="100%" alt="Chart showing you what pillows are best for you to buy" />
                     {% endif %}
                 </div>
-                <ul class="pillow-list">
-                    {% for pillow in pillowList %}
-                        <li class="pillow-item">
-                            {% set pillowNum = loop.index %}
-                            {% include 'pillow.html' %}
-                        </li>
-                    {% endfor %}
-                </ul>
+                {% if type == "pillow" %}
+                    <ul class="pillow-list">
+                        {% for pillow in pillowList %}
+                            <li class="pillow-item">
+                                {% set pillowNum = loop.index %}
+                                {% include 'pillow.html' %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+                {% if type == "post" %}
+                    <ul class="pillow-list">
+                        {% for pillow in pillowList %}
+                                <li class="pillow-item">
+                                    {% include 'deal_post.html' %}
+                                </li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
             </div>
             <div class="mobile-article">
                 <div class="accordion-space">
                     <h2 class="page-title">{{pageTitle}}</h2>
-                    <div class="accordion-holder">
-                        <h3 class="accordion-title">Some Helpful Info:</h3>
                         {% include 'accordion.html' with context %}
                     </div>
                     {% if chartImage %}
                         <img src="{{ chartImage }}" width="100%" alt="Chart showing you what pillows are best for you to buy" class="chart-image" />
                     {% endif %}
                 </div>
-                <ul class="pillow-list">
-                    {% for pillow in pillowList %}
-                            <li class="pillow-item">
-                                {% set pillowNum = loop.index %}
-                                {% include 'pillow.html' %}
-                            </li>
-                    {% endfor %}
-                </ul>
+                {% if type == "pillow" %}
+                    <ul class="pillow-list mobile-article">
+                        {% for pillow in pillowList %}
+                                <li class="pillow-item">
+                                    {% set pillowNum = loop.index %}
+                                    {% include 'pillow.html' %}
+                                </li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+                {% if type == "post" %}
+                    <ul class="pillow-list mobile-article">
+                        {% for pillow in pillowList %}
+                                <li class="pillow-item">
+                                    {% include 'deal_post.html' %}
+                                </li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
             </div>
         </article>
     </div>

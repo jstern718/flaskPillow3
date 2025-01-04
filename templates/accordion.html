@@ -1,18 +1,23 @@
 <div class="open-accordion" >
-    <ul className="open-ul">
-        <li class="closedLi">{{ pageText[0] }}</li>
-        <li class="openLi closed">{{ pageText[1] }}</li>
-        <li class="openLi closed">{{ pageText[2] }}</li>
-        <li class="openLi closed">{{ pageText[3] }}</li>
-    </ul>
-    <div class="read-more-div">
-        <button
-            type="button"
-            class="read-more-button"
-            onclick="clickFunctionOpen()">
-            read more
-        </button>
-    </div >
+    {% if pageText[0] %}
+        <div class="accordion-holder">
+            <h3 class="accordion-title">Some Helpful Info:</h3>
+            <ul className="open-ul">
+                <li class="closedLi">{{ pageText[0] }}</li>
+                <li class="openLi closed">{{ pageText[1] }}</li>
+                <li class="openLi closed">{{ pageText[2] }}</li>
+                <li class="openLi closed">{{ pageText[3] }}</li>
+            </ul>
+            <div class="read-more-div">
+                <button
+                    type="button"
+                    class="read-more-button"
+                    onclick="clickFunctionOpen()">
+                    read more
+                </button>
+            </div >
+        </div>
+    {% endif %}
 </div>
 
 
