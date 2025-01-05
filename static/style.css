@@ -910,7 +910,7 @@ accordion background: #c7d2fe
 
     .pillow-top{
         color: darkslateblue;
-        font-size: 2rem;
+        font-size: 2rem;;
     }
 
     .pillow-intro{
@@ -936,14 +936,16 @@ accordion background: #c7d2fe
         flex-direction: row;
         justify-content: center;
         margin-bottom: 1rem;
+
     }
 
     .pillow-button{
         background-color: #5082ef;
         margin-top: 1rem;
         margin-bottom: 1rem;
-        padding: 2rem;
-        color: white;
+        padding: 1.5rem;
+        color: white;;
+        font-size: 1.5rem;
     }
 
     .pillow-button:hover{
@@ -980,6 +982,7 @@ accordion background: #c7d2fe
 
     .deal-discussion{
         margin-top: 0;
+        margin-bottom: 1rem;
     }
 
     .internal-link-text{
@@ -1679,6 +1682,7 @@ accordion background: #c7d2fe
         justify-content: center;
         margin-bottom: 1rem;
         cursor: pointer;
+
     }
 
     .pillow-button{
@@ -1686,6 +1690,7 @@ accordion background: #c7d2fe
         color:white;
         margin-top: .5rem;
         margin-bottom: .5rem;
+
     }
 
     .pillow-button:hover{
