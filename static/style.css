@@ -588,10 +588,11 @@ accordion background: #c7d2fe
     }
 
     a {
-    color: #646cff;
-
+    color: gray;
     text-decoration: inherit;
+
     }
+
     a:hover {
     color: #535bf2;
     }
@@ -856,6 +857,7 @@ accordion background: #c7d2fe
     .card-div{
         margin-left: 8px;
         margin-right: 8px;
+        padding-bottom: 0;
     }
 
     /** Sub-Section: Pillow Card Styling (mobile)*/
@@ -906,6 +908,11 @@ accordion background: #c7d2fe
         margin-right: 2rem;
     }
 
+    .pillow-top{
+        color: darkslateblue;
+        font-size: 2rem;
+    }
+
     .pillow-intro{
         color: #699bd1;
         text-align: center;
@@ -920,8 +927,6 @@ accordion background: #c7d2fe
 
     .pillow-text{
         font-weight: 400;
-        color: gray;
-        font-size: medium;
         text-decoration: inherit;
         padding: none;
     }
@@ -935,8 +940,8 @@ accordion background: #c7d2fe
 
     .pillow-button{
         background-color: #5082ef;
-        margin-top: 2rem;
-        margin-bottom: .5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
         padding: 2rem;
         color: white;
     }
@@ -945,13 +950,14 @@ accordion background: #c7d2fe
         background-color: #2563eb;
     }
 
-    /** Sub-Section: deals page */
-a .no-button{
-        color: blue;
+    /** Sub-Section: deals page (mobile) */
+    a .no-button{
+        color: royalblue;
     }
 
     .no-button{
         background-color: transparent;
+        color: royalblue !important;
         border: none;
         box-shadow: none;
         padding: 0px;
@@ -962,14 +968,23 @@ a .no-button{
     .discount-text{
         font-weight: 600;
         color: red;
+        margin-bottom: 0;
     }
 
     .non-discount-text{
         font-weight: 400;
         color: black;
+        margin-bottom: 0;
+        font-size: 1rem;
     }
 
+    .deal-discussion{
+        margin-top: 0;
+    }
 
+    .internal-link-text{
+        font-size: 2rem;
+    }
 
 
 }
@@ -1616,6 +1631,10 @@ a .no-button{
        color: #7f9cf5;
        /* see desktop subsections */
 
+    }
+
+    .pillow-top{
+        color: darkslateblue;
     }
 
     .pillow-title{

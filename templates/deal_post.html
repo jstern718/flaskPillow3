@@ -3,14 +3,14 @@
     <a href="{{ pillow.link }}" class="card-div">
 
         <div>
-            <h3>{{ pillow.intro }}</h3>
+            <h3 class="pillow-top">{{ pillow.intro }}</h3>
             <h4 class="pillow-intro">{{pillow.title}}</h4>
             <p class="non-discount-text">Discounted Price: <span class="discount-text">{{ pillow.dealprice }}</span> (down from {{ pillow.normalprice }})</p>
             <a href="{{ pillow.link }}">
-                <p class="pillow-text">{{ pillow.discussion }}</p>
+                <p class="pillow-text deal-discussion">{{ pillow.discussion }}</p>
             </a>
             <a href="{{ pillow.link }}">
-                <p class="pillow-text">Want to see what we have to say about this type of pillow. See this
+                <p class="pillow-text internal-link-text">Want to see what we have to say about this type of pillow. See this
                     <a href="{{ pillow.see }}" class="no-button">
                         <span class="pillow-text">discussion.</span>
                     </a>

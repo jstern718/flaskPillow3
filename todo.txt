@@ -1,11 +1,15 @@
 Coding:
 
+TODO: [] - fix spacing around number in cards
 TODO: [] - make page you were on before turn blue in mobile nav
-
+TODO: [] - Images of top pics -- Blocker: need purchase
 
 Content:
 
-TODO: [] - deals blog
+TODO: [] - thin pillow chart
+TODO: [] - memory foam chart
+TODO: [] - shredded foam chart
+
 TODO: [] - high profile pillows
 TODO: [] - neck pillows
 TODO: [] - latex pillows
@@ -13,14 +17,30 @@ TODO: [] - pillowcases for different type pillows
 TODO: [] - down pillows
 TODO: [] - down alternative pillows
 TODO: [] - overall good deals
-TODO: [] - thin pillow chart
-TODO: [] - memory foam chart
-TODO: [] - shredded foam chart
 
+TODO: [] - high profile chart
+TODO: [] - neck pillow chart
+TODO: [] - latex pillow chart
+TODO: [] - pillowcases chart
+TODO: [] - down pillow chart
+TODO: [] - down alternative chart
 
+Other:
+
+TODO: [] - buy pillowcases
 
 Done:
 
+[_]
 [x]: only some pages turn blue in sidebar when you are on them
 [x]: work on main pages
 [x]: Research SEO and add meta tags
+[x] - deals blog
+
+BUG:
+
+HACK
+FIXME
+XXX
+NOTE
+[_]
