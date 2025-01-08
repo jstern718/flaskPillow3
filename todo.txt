@@ -1,6 +1,5 @@
 Coding:
 
-TODO: [] - fix spacing around number in cards
 TODO: [] - make page you were on before turn blue in mobile nav
 TODO: [] - Images of top pics -- Blocker: need purchase
 
@@ -32,6 +31,9 @@ TODO: [] - buy pillowcases
 Done:
 
 [_]
+
+[x] - fix spacing around discussion on deals card
+[x] - fix spacing around number in cards
 [x]: only some pages turn blue in sidebar when you are on them
 [x]: work on main pages
 [x]: Research SEO and add meta tags

@@ -13,7 +13,7 @@ coolingList = [
       "link": "https://amzn.to/3OaZNZn"},
     {"intro": "The Best Cooling Pillow if You Like Solid Foam But Aren't a Fan of Latex",
       "title": "Tempur-Pedic TEMPUR-Cloud Dual Cooling Pillow - Queen",
-      "description": "Not everyone likes the springiness of latex. If you're one of those people, you might have to go with a more traditional opition. Tempur-pedic has been making good, but expensive pillows for ages. Somehow, their memory foam manages to be more supportive than everyone else's. Tempur-Pedic is actually one of the few brands than has figured out how to make a cooling pillow cover that works more often than not. But it's still just a cover over a hot pillow. This pillow is a bit different. It has an internal gel layer meant to prevent the heat from building up to begin with.",
+      "description": "Not everyone likes the springiness of latex. If you're one of those people, you might have to go with a more traditional opition. Tempur-pedic has been making good, but expensive pillows for ages. Somehow, their memory foam manages to be more supportive than everyone else's. Tempur-Pedic is actually one of the few brands than has figured out how to make a cooling pillow cover that works more often than not. But, in many cases, it's still just a cover over a hot pillow. This pillow is a bit different. It has an internal gel layer meant to prevent the heat from building up to begin with.",
       "link": "https://amzn.to/3YUEhNo"},
     {"intro": "The Best Cooling Pillow At A Reasonable Price",
       "title": "SensorPEDIC Therapedic® Polar Nights™ - 20X Cooling Standard Memory Foam Pillow",
