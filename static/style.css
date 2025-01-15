@@ -631,7 +631,8 @@ accordion background: #c7d2fe
         background-color: #ffffff;
     }
     a:hover {
-        color: #747bff;
+        color: #5f80a0;
+        opacity: .7;
     }
     button {
         background-color: #f9f9f9;
@@ -1189,7 +1190,8 @@ accordion background: #c7d2fe
             background-color: #ffffff;
         }
         a:hover {
-            color: #747bff;
+            color: #5f80a0;
+            opacity: .7;
         }
 
     }
