@@ -1,4 +1,12 @@
 dealsList = [
+    { "date": "1.20.25",
+      "intro": "An Even Better Deal On a High Quality Cooling Pillow",
+      "title": "Tempur-Pedic TEMPUR-Cloud Dual Cooling Pillow - Queen",
+      "normalprice": "$189.00",
+      "dealprice": "$82.99",
+      "description": "Not everyone likes the springiness of latex. If you're one of those people, you might have to go with a more traditional opition. Tempur-pedic has been making good, but expensive pillows for ages. Somehow, their memory foam manages to be more supportive than everyone else's. Tempur-Pedic is actually one of the few brands than has figured out how to make a cooling pillow cover that works more often than not.  <br><br> But, in many cases, it's still just a cover over a hot pillow. This pillow is a bit different. It has an internal gel layer meant to prevent the heat from building up to begin with.",
+      "see": "/cooling",
+      "link": "https://amzn.to/3YUEhNo"},
     { "date": "1.15.25",
       "intro": "A Good Deal On an Adjustable Shredded Memory Foam Pillow",
       "title": "Coop Home Goods Original Adjustable Pillow - Queen",
