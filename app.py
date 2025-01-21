@@ -76,6 +76,7 @@ def memory_foam():
                             pageText = memoryFoamText,
                             pageTitle="The Best Memory Foam Pillows",
                             pageDescription="The best pillows for people who like a warm cushiony feel.",
+                            chartImage = "static/assets/foam-chart.webp",
                             type="pillow")
 
 
@@ -87,6 +88,7 @@ def shredded_foam():
                             pageText = shreddedFoamText,
                             pageTitle="The Best Shredded Foam Pillows",
                             pageDescription="The best pillows for people who want memory foam without the warmth.",
+                            chartImage = "static/assets/foam-chart.webp",
                             type="pillow")
 
 
