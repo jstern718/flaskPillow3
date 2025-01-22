@@ -1,4 +1,12 @@
 dealsList = [
+    {"date": "1.22.25",
+      "intro": "A Great Deal on a Memory Foam Pillow that is Adjustable in Height:",
+      "title": "USlixury Adjustable Side Sleeper Pillow",
+      "normalprice": "$40.99",
+      "dealprice": "$33.99",
+      "description": "Despite the less than admirable spelling of its name, this pillow is a good option for people who need a thin pillow. <br><br> It is adjustable in height, so you can make it as thin as you need. It is also a great option for side sleepers because of the presence of a cutout that allows your shoulders to align with your head while you sleep on your side.",
+      "see": "/memory-foam",
+      "link": "https://amzn.to/40NtpU8"},
     { "date": "1.20.25",
       "intro": "An Even Better Deal On a High Quality Cooling Pillow",
       "title": "Tempur-Pedic TEMPUR-Cloud Dual Cooling Pillow - Queen",
