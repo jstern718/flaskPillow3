@@ -1,4 +1,12 @@
 dealsList = [
+    {"date": "1.26.25",
+      "intro": "A Good Deal on a Very Thin Memory Foam Pillow:",
+      "title": "Blissbury Stomach Sleeping Pillow - Thin Memory Foam",
+      "normalprice": "$47.99",
+      "dealprice": "$44.99",
+      "description": "There is a lot of competition in this part of the market. If you know the exact hight you want to the tenth of an inch, you can probably find it. But if you're not sure yet, Blissbury is starting to make a name for itself as a good option. This pillow is 3.3 inches thick, but you can also get an even thinner version that it only is 2.6 inches.",
+      "see": "/thin",
+      "link": "https://amzn.to/3OlAxjn"},
     {"date": "1.22.25",
       "intro": "A Great Deal on a Memory Foam Pillow that is Adjustable in Height:",
       "title": "USlixury Adjustable Side Sleeper Pillow",
