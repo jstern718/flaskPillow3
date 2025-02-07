@@ -13,7 +13,7 @@ mostPopularList = [
       "link": "https://amzn.to/3YkqfFX"},
     {"intro": "A Very Affordable Down Alternative Pillow That is Astonishingly Fluffy",
       "title": "Bedsure Down Alternative Pillows",
-      "description": "The Bedsure Pillows (queen) (which come in sets of 2) are down alternative pillows with a polyester microfiber cover and a 100% polyester microfiber fill. They are approximately 9 1/2 inches thick.",
+      "description": "This set of incredibly popular down alternative pillows is a good deal for anyone who is looking for a lot of support, or for anyone who needs a couple more pillows around in case they have any guests. They are also incredibly fluffy - measuring approximately 9 1/2 inches thick. If most pillows seem to small or flat to you, you won't be dissapointed with these.",
       "link": "https://amzn.to/482LPC7"},
     {"intro": "Another Gusseted Pillow Set That Is Also Affordable",
       "title": "Viewstar Down Alternative Pillows",
